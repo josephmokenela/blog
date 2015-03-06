@@ -11,6 +11,10 @@
 
 .idea/
 
+# Ignore .project files, which are used by Aptana
+
+.project
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
