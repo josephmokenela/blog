@@ -15,28 +15,30 @@
 		  <% end %>
 		
 		 
-		    <%= f.label :title %>
-		    <%= f.text_field :title, class: "form-control" %>
-		    <br/>
+			    <%= f.label :title %>
+			    <%= f.text_field :title, class: "form-control" %>
+			    <br />
 		  
 		  
-		  <%= f.label :body %>
-		  <%= f.text_area :body, class: "form-control" %>
-		  <br/>
+			  <%= f.label :body %>
+			  <%= f.text_area :body, class: "form-control" %>
+			  <br />
+			
 		
-		
-		    <div class="field">
-		      <%= f.label :excerpt %><br>
-		      <%= f.text_field :excerpt %>
-		    </div>
-		    <div class="field">
-		      <%= f.label :location %><br>
-		      <%= f.text_field :location %>
-		    </div>
-		  <div class="field">
-		    <%= f.label :published_at %><br>
-		    <%= f.datetime_select :published_at %>
-		  </div>
+		      <%= f.label :excerpt %>
+		      <%= f.text_field :excerpt, class: "form-control" %>
+		      <br />
+		    
+		    
+		      <%= f.label :location %>
+		      <%= f.text_field :location, class: "form-control" %>
+		      <br />
+		    
+		  
+			    <%= f.label :published_at %><br>
+			    <%= f.datetime_select :published_at, class: "form-control" %>
+			    <br />
+		  
 		  <div class="actions">
 		    <%= f.submit %>
 		  </div>
