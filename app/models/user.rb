@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
-  validates_presence_of :email, :password
+  #validates_presence_of :email, :password
   
-  has_one :profile
+  has_one :profiles
   has_many :articles, -> {order('published_at DESC, title ASC')}, :dependent => destroy
   
   has_many :replies, :through => :articles, :source => :comments
